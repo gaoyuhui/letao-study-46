@@ -30,7 +30,7 @@ $(function() {
 	// 添加分类
 	$('#addBtn').on('click',function() {
 		var categoryName = $.trim($('#addValue').val());
-		if(!value) {
+		if(!categoryName) {
 			alert('情输入分类名称');
 			return;
 		}
