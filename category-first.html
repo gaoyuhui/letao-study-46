@@ -71,14 +71,14 @@
 	            </nav>
 	        </div>
 	        <div class="body">
-	        	<button class="operation btn btn-primary" data-toggle="modal" data-target=".category-first">添加分类</button>
+	        	<button class="operation btn btn-primary" data-toggle="modal" data-target=".category-first" >添加分类</button>
 	        	<table class="table table-bordered" id="cateBox">
 
 	        		
 	        	</table>
 	        	<div class="btn-group page">
-	        		<div class="btn btn-default">上一页</div>
-	        		<div class="btn btn-default">下一页</div>
+	        		<div class="btn btn-default" id="prev">上一页</div>
+	        		<div class="btn btn-default" id="next">下一页</div>
 	        	</div>
 	        </div>
 		</div>
@@ -93,12 +93,12 @@
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="请输入分类的名称">
+						<input id="addValue" type="text" class="form-control" placeholder="请输入分类的名称">
 					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-					<button type="button" class="btn btn-primary">保存</button>
+					<button type="button" class="btn btn-primary" id="addBtn">保存</button>
 				</div>
 			</div>
 		</div>
